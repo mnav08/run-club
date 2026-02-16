@@ -1,0 +1,114 @@
+:root {
+  /* Colors */
+  --primary: #dfff00;
+  --bg-main: #121212;
+  --bg-surface: #1e1e1e;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+
+  /* Typography */
+  --font-heading: "Inter", sans-serif;
+  --font-body: "JetBrains Mono", monospace;
+  --fs-body: 1rem; /* 16px */
+  --fs-big: 2rem; /* 32px */
+  --fs-small: 0.875rem; /* 14px */
+
+  /* Spacing  */
+  --section-gap: 7.5rem; /* Space between sections */
+}
+
+/*GLOBAL STYLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  padding: 0 1rem;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+.muted {
+  color: var(--text-muted);
+}
+.img-container {
+  width: min(200px, 100%);
+}
+.img-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*GLOBAL STYLES*/
+/* HEADER AND NAV */
+.header-container {
+  background-color: var(--bg-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 15vh;
+}
+.nav-links ul {
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url("./imgs/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+}
+.hero h2 {
+  color: #ffffffc0;
+}
+.hero a {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+/* STATS SECTION FLEXBOX */
+.container-stats {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 1px solid white;
+}
+
+.fs-big {
+  font-size: var(--fs-big);
+}
