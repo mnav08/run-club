@@ -118,6 +118,7 @@ h2 {
 }
 .hero .cta-btn:hover {
   color: var(--bg-main);
+  text-decoration: none;
 }
 /* STATS SECTION FLEXBOX */
 .container-stats {
