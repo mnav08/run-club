@@ -254,6 +254,8 @@ input[type="email"] {
   #vibe {
     width: min(1200px, 90%);
   }
+}
+@media screen and (max-width: 700px) {
   form {
     display: none;
   }
@@ -266,6 +268,6 @@ input[type="email"] {
     display: block;
   }
   .hidden .cta-btn {
-    color: #ccc;
+    color: var(--primary);
   }
 }
